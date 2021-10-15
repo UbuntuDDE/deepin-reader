@@ -1,5 +1,5 @@
-deepin-reader (5.8.0.1) unstable; urgency=low
+deepin-reader (5.9.17-1ubuntu1) impish; urgency=medium
 
-  * Autobuild Tag 5.8.0.1
+  * New upstream release for impish.
 
- -- TagBuilder <tagbuilder@deepin.com>  Fri, 30 oct 2020 18:46:29 +0000
+ -- Ananta Mishra <mishraananta2017@gmail.com>  Fri, 15 Oct 2021 17:08:03 +0545

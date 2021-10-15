@@ -1,12 +1,38 @@
 Source: deepin-reader
 Section: graphics
 Priority: optional
-Maintainer: deepin <packages@deepin.com>
-Build-Depends: debhelper (>= 11), pkg-config, qtbase5-dev, qtchooser, qttools5-dev-tools, libdtkwidget-dev, libspectre-dev, libdjvulibre-dev, libtiff-dev, libkf5archive-dev, libjpeg-dev, libicu-dev, libpng-dev, zlib1g-dev, liblcms2-dev, libopenjp2-7-dev, libfreetype6-dev, libgtest-dev, libchardet-dev
-Standards-Version: 4.5.0
+Maintainer: Ananta Mishra <mishraananta2017@gmail.com>
+XSBC-Original-Maintainer: deepin <packages@deepin.com>
+Build-Depends:
+ cmake,
+ debhelper-compat (= 13),
+ libchardet-dev,
+ libdjvulibre-dev,
+ libdtkwidget-dev(>=5.5~),
+ libfreetype6-dev,
+ libgtest-dev,
+ libicu-dev,
+ libjpeg-dev,
+ libkf5archive-dev,
+ liblcms2-dev,
+ libopenjp2-7-dev,
+ libpng-dev,
+ libspectre-dev,
+ libtiff-dev,
+ pkg-config,
+ qtbase5-dev,
+ qtchooser,
+ qttools5-dev-tools,
+ zlib1g-dev,
+Standards-Version: 4.5.1
 
 Package: deepin-reader
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, pandoc, wkhtmltopdf, libdtkwidget5 (>= 5.4.11)
+Depends:
+ libdtkwidget5 (>= 5.4.11),
+ pandoc,
+ wkhtmltopdf,
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: a tool for reading document files.
  Document Viewer is a tool for reading document files,supporting PDF, DJVU, DOCX etc
